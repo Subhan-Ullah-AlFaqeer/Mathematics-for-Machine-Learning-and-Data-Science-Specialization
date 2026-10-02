@@ -18,13 +18,13 @@ This module bridges pure calculus and practical machine learning, taking you fro
 
 This module's core video lectures, interactive plug-ins, practice labs, and graded assessments are mapped directly to their targeted analytical focus:
 
-| Asset / Deliverable | Type | Operational Focus |
-| :--- | :--- | :--- |
-| **Partial Derivatives & Gradients** | • Video Series (14 min)<br>• Practice Assignment (100%) | Formulating rate of change along single axes, computing gradient vectors ($\nabla f$), and determining directional steepest descent. |
-| **Surface Topography Simulation** | • Ungraded Plugin (15 min) | Visualizing 3D loss landscapes to inspect local minima, global minima, and saddle points. |
+| Asset / Deliverable | Operational Focus |
+| :---| :--- |
+| **Partial Derivatives & Gradients**  | Formulating rate of change along single axes, computing gradient vectors ($\nabla f$), and determining directional steepest descent. |
+| **Surface Topography Simulation** | Visualizing 3D loss landscapes to inspect local minima, global minima, and saddle points. |
 | **1D & 2D Gradient Descent Labs** | • Lab 1: 1D Optimization (1h)<br>• Lab 2: 2D Optimization (1h) | Writing iterative update algorithms ($x_{k+1} = x_k - \alpha \nabla f(x_k)$) and analyzing learning rate tuning vs. divergence. |
-| **Least Squares Optimization** | • Video Series (6 min)<br>• Graded Quiz (100%) | Translating residual sum of squares (RSS) into loss surfaces suitable for iterative parameter updating. |
-| **Linear Regression Project** | • Programming Assignment (3h)<br>• Grade: 100% | Building an end-to-end vectorised Gradient Descent optimizer from scratch to fit linear regression models to multi-observation datasets. |
+| **Least Squares Optimization** | Translating residual sum of squares (RSS) into loss surfaces suitable for iterative parameter updating. |
+| **Linear Regression Project** | Building an end-to-end vectorised Gradient Descent optimizer from scratch to fit linear regression models to multi-observation datasets. |
 
 ---
 
@@ -33,7 +33,7 @@ This module's core video lectures, interactive plug-ins, practice labs, and grad
 The optimization framework implemented throughout this module:
 
 * **Multivariable Loss Definition** ➔ Formulated via **Least Squares Cost Function** $J(\theta_0, \theta_1)$ across multiple observation sets.
-* **Analytical Gradient Computation** ➔ Evaluated via **Partial Derivatives Vector** $\nabla J = \begin{bmatrix} \frac{\partial J}{\partial \theta_0} & \frac{\partial J}{\partial \theta_1} \end{bmatrix}^T$.
+* **Analytical Gradient Computation** ➔ Evaluated via **Partial Derivatives Vector** $(\nabla J = \begin{bmatrix} \frac{\partial J}{\partial \theta_0} & \frac{\partial J}{\partial \theta_1} \end{bmatrix}^T)$.
 * **Iterative Surface Descent** ➔ Executed via **Gradient Step Updates** parameter adjustments against steepest ascent direction.
 * **Convergence & Evaluation** ➔ Verified through **Loss Curve Monitoring** to ensure reaching optimal global minima without overshoot.
 
