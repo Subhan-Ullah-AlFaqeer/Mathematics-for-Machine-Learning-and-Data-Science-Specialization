@@ -1,31 +1,71 @@
-Specialization - 3 course series
+# 📊 Course 3: Probability & Statistics for Machine Learning & Data Science
 
-Newly updated for 2024! Mathematics for Machine Learning and Data Science is a foundational online program created by DeepLearning.AI and taught by Luis Serrano. In machine learning, you apply math concepts through programming. And so, in this specialization, you’ll apply the math concepts you learn using Python programming in hands-on lab exercises. As a learner in this program, you'll need basic to intermediate Python programming skills to be successful.
+Welcome to **Course 3** of the **Mathematics for Machine Learning and Data Science Specialization**, created by DeepLearning.AI and taught by Luis Serrano! This foundational course establishes the core probability and inferential statistics principles that power data-driven machine learning models. You will bridge abstract probabilistic theory with hands-on implementation—moving from exploratory data analysis (EDA) and Bayes' theorem to univariate/multivariate distributions, covariance matrices, the Central Limit Theorem, Maximum Likelihood Estimation (MLE), Bayesian Maximum A Posteriori (MAP) estimation, confidence intervals, and hypothesis testing (including A/B testing).
 
-Many machine learning engineers and data scientists need help with mathematics, and even experienced practitioners can feel held back by a lack of math skills. This Specialization uses innovative pedagogy in mathematics to help you learn quickly and intuitively, with courses that use easy-to-follow visualizations to help you see how the math behind machine learning actually works. 
+Throughout this course, you will write production-grade Python code utilizing **Pandas**, **NumPy**, **SciPy**, and **Matplotlib** / **Seaborn** to perform exploratory data analysis, run stochastic Monte Carlo simulations, fit linear regression models, compute confidence intervals, and execute statistical hypothesis tests.
 
-We recommend you have a high school level of mathematics (functions, basic algebra) and familiarity with programming (data structures, loops, functions, conditional statements, debugging). Assignments and labs are written in Python but the course introduces all the machine learning libraries you’ll use.
+---
 
-Applied Learning Project
+## 📝 Core Technical Objectives
+- **Probability Foundations & Bayes' Theorem:** Calculating sample spaces, conditional probabilities, and joint events. Applying Bayes' theorem to update prior beliefs with incoming evidence:
+  - **Bayes' Formula:** $P(A \mid B) = \frac{P(B \mid A)P(A)}{P(B)}$
 
-By the end of this Specialization, you will be ready to:
+- **Multi-Variable Distributions & Covariance:** Analyzing univariate and multi-variable probability distributions, joint/marginal/conditional probabilities, expectation, variance, skewness, kurtosis, covariance matrices, and correlation coefficients ($\rho_{XY}$).
 
-    Represent data as vectors and matrices and identify their properties like singularity, rank, and linear independence
+- **Sampling Theory, MLE & Regularization:** Applying the Law of Large Numbers and the Central Limit Theorem (CLT) to understand sample distribution convergence. Deriving Maximum Likelihood Estimators (MLE) and incorporating prior beliefs using Bayesian Maximum A Posteriori (MAP) estimation connected to L1/L2 regularization.
 
-    Apply common vector and matrix algebra operations like the dot product, inverse, and determinants
+- **Confidence Intervals & Hypothesis Testing:** Constructing interval estimates, formulating null/alternative hypotheses, controlling Type I ($\alpha$) and Type II ($\beta$) errors, computing $p$-values, performing $t$-tests, and evaluating digital product variants via A/B testing.
 
-    Express matrix operations as linear transformations
+---
 
-    Apply concepts of eigenvalues and eigenvectors to machine learning problems including Principal Component Analysis (PCA)
+## 🧪 Course Architecture & Module Matrix
 
-    Optimize different types of functions commonly used in machine learning
+This course is structured into 4 sequential modules taking you from probability fundamentals to inferential statistics, estimation, and hypothesis testing:
 
-    Perform gradient descent in neural networks with different activation and cost functions
+| Module / Directory | Operational Focus & Technical Topics | Key Notebooks & Deliverables |
+| :--- | :--- | :--- |
+| **[01_Week](./01_Week)** | **Probability and Probability Distributions**: Exploratory data analysis with Pandas, probability axioms, permutations/combinations, conditional probability, Bayes' theorem, and classic probability paradoxes (Birthday problem, Monty Hall). | • `C3_W1_Assignment.ipynb`<br>• `C3_W1_Lab_1_Birthday_Problems.ipynb`<br>• `C3_W1_Lab_2_Monty_Hall.ipynb`<br>• `C3_W1_Rideshare_Project_Week1.ipynb`<br>• `C3_W1_intro-to-pandas-world-happiness.ipynb` |
+| **[02_Week](./02_Week)** | **Describing Probability Distributions & Multi-Variable Probability**: Summary statistics (mean, variance, skewness, kurtosis), joint/marginal/conditional distributions, covariance matrices, correlation coefficients, and multivariate Gaussians. | • `C3_W2_Assignment.ipynb`<br>• `C3_W2_Lab_2_Dice_Simulations.ipynb`<br>• `C3_W2_ugl_datasets.ipynb`<br>• `Rideshare_Project_Week2.ipynb` |
+| **[03_Week](./03_Week)** | **Sampling, Point Estimation, and Bayesian Statistics**: Population vs. sample, Law of Large Numbers, Central Limit Theorem (CLT), Point Estimation, Maximum Likelihood Estimation (MLE), Regularization, and Bayesian Statistics (MAP). | • `C3_W3_Assignment.ipynb`<br>• `C3_W3_Lab_1_Central_Limit_Theorem.ipynb`<br>• `linear-regression-world-happiness.ipynb` |
+| **[04_Week](./04_Week)** | **Confidence Intervals and Hypothesis Testing**: Interval estimation, confidence intervals, hypothesis formulation ($H_0 / H_1$), Type I/II errors, $p$-values, $t$-tests (one-sample, two-sample, paired), and A/B testing applications. | • `C3_W4_Assignment.ipynb` |
 
-    Identity the features of commonly used probability distributions
+---
 
-    Perform Exploratory Data Analysis to find, validate, and quantify patterns in a dataset
+## 💡 Visual Pipeline Reference
 
-    Quantify the uncertainty of predictions made by machine learning models using confidence intervals, margin of error, p-values, and hypothesis testing.
+The unified probabilistic and inferential pipeline governing Course 3:
 
-    Apply common statistical methods like MLE and MAP
+- **Core Statistical Progression**:
+
+$$\begin{aligned}   \text{Bayes' Rule: } &P(A \mid B) = \frac{P(B \mid A)P(A)}{P(B)} \\   \text{Central Limit Theorem: } &Z = \frac{\bar{X} - \mu}{\sigma / \sqrt{n}} \xrightarrow{d} \mathcal{N}(0, 1) \\   \text{Maximum Likelihood: } &\hat{\theta}_{\text{MLE}} = \arg\max_{\theta} \sum_{i=1}^n \ln P(x_i \mid \theta) \\   \text{Confidence Interval: } &\bar{X} \pm t_{\alpha/2, n-1} \left( \frac{s}{\sqrt{n}} \right)   \end{aligned}$$
+
+- **Core Probability & Statistics Concepts & Machine Learning Mapping**:
+
+| Statistical Concept | Mathematical Expression | Machine Learning / Data Science Application |
+| :--- | :--- | :--- |
+| **Conditional Probability** | $P(A \mid B) = \frac{P(A \cap B)}{P(B)}$ | Naive Bayes classification, updating model beliefs |
+| **Covariance Matrix** | $\Sigma_{ij} = \text{Cov}(X_i, X_j)$ | Multivariate Gaussian modeling, feature dependency analysis |
+| **Maximum Likelihood (MLE)** | $\arg\max_{\theta} \sum \ln P(x_i \mid \theta)$ | Logistic regression optimization, neural network loss functions |
+| **Confidence Interval / $t$-Test** | $\bar{X} \pm t \cdot \frac{s}{\sqrt{n}}$ | Evaluating model performance uncertainty, A/B testing variants |
+
+---
+
+## 🎯 Technical Skills Architecture
+
+### 📊 Probability & Inferential Statistics Theory
+- **Probabilistic Reasoning:** Applying Bayes' theorem and conditional probability rules to model uncertainty in data.
+- **Distribution Analysis:** Characterizing uni- and multi-variable datasets using moments, covariance matrices, and multivariate Gaussian properties.
+- **Statistical Inference:** Leveraging the Central Limit Theorem, MLE, MAP, confidence intervals, and hypothesis tests to make rigorous data-driven conclusions.
+
+### 🤖 Applied Python & Data Science Engineering
+- **Pandas Data wrangling:** Cleaning, filtering, and aggregating tabular datasets to perform exploratory data analysis.
+- **Stochastic Simulations:** Running Monte Carlo experiments and simulating random distributions using NumPy.
+- **Statistical Solvers:** Executing hypothesis tests, computing confidence intervals, and evaluating A/B testing experiments using SciPy.
+
+---
+
+## 🛠️ Production Tech Stack & Ecosystem
+
+| Mathematical Framework | Data Analytics Libraries | Statistical & Simulation Tools | Interactive Environment |
+| :---: | :---: | :---: | :---: |
+| ![Probability](https://img.shields.io/badge/Probability_%26_Stats-Theory-blue?style=flat) | ![Pandas & NumPy](https://img.shields.io/badge/Pandas_%26_NumPy-Data_Manipulation-013243?style=flat&logo=numpy&logoColor=white) | ![SciPy & Seaborn](https://img.shields.io/badge/SciPy_%26_Seaborn-Hypothesis_Solvers-3776AB?style=flat&logo=python&logoColor=white) | ![Jupyter](https://img.shields.io/badge/Jupyter-Interactive_Labs-FA0F00?style=flat&logo=jupyter&logoColor=white) |
