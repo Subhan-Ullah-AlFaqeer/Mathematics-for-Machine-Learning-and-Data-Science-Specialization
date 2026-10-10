@@ -1,60 +1,68 @@
-# 📊 Summary Statistics, Multivariate Distributions & Covariance
+# 📊 Course 3, Week 2: Describing Probability Distributions and Multi-Variable Probability
 
-Welcome to this module covering essential descriptive statistics and multi-variable distribution theory in data science: **Measures of Central Tendency, Moments (Variance, Skewness, Kurtosis), Joint & Marginal Distributions, Covariance, and Data Visualization**.
-
-This module bridges univariate data profiling and multivariate statistical modeling, taking you from expected values and standardizations to joint/conditional probability distributions, covariance matrices, and hands-on stochastic simulation with NumPy.
+Welcome to **Week 2** of **Probability & Statistics for Machine Learning & Data Science** (Course 3 of the DeepLearning.AI Mathematics for Machine Learning and Data Science Specialization)! This module explores univariate summary statistics and multi-variable probability distributions. You will transition from single random variables to joint, marginal, and conditional distributions, analyze covariance matrices, investigate correlation coefficients, explore multivariate Gaussian distributions, and build loaded dice simulation models in Python.
 
 ---
 
 ## 📝 Core Technical Objectives
-* **Moments & Summary Statistics:** Computing expected value $E[X]$, variance $\text{Var}(X)$, standard deviation $\sigma$, skewness, kurtosis, and data standardization (z-scores).
-* **Statistical Data Visualization:** Interpreting box-plots, quantiles, Kernel Density Estimation (KDE), violin plots, and Q-Q plots to evaluate distribution shapes and normality.
-* **Multivariate Probability Distributions:** Modeling joint distributions $P(X,Y)$, deriving marginal/conditional distributions, and working with multivariate Gaussian distributions.
-* **Covariance & Dependency Analysis:** Computing sample/population covariance, building covariance matrices $\mathbf{\Sigma}$, calculating Pearson correlation coefficients ($\rho$), and simulating weighted random processes.
+- **Univariate Summary Statistics:** Calculating measures of central tendency (mean, median, mode), dispersion (variance, standard deviation), and distribution shape (skewness and kurtosis) using expected value operators.
+
+- **Joint, Marginal & Conditional Distributions:** Extending probability analysis to multiple random variables. Defining joint distributions $P(X=x, Y=y)$, extracting marginal distributions by summing/integrating out variables, and computing conditional distributions $P(X \mid Y=y)$.
+
+- **Covariance, Correlation & Multivariate Gaussians:** Measuring linear association between variables via covariance and standardized correlation coefficients $\rho_{XY}$. Assembling covariances into covariance matrices and exploring the multi-dimensional properties of Multivariate Gaussian distributions.
+
+- **Loaded Dice Simulations & Exploratory Data Analysis:** Simulating stochastic game mechanics with NumPy and visualizing statistical distributions across real-world datasets.
 
 ---
 
 ## 🧪 Interactive Laboratory & Visual Selection Matrix
 
-This module's core video lectures, interactive tools, hands-on labs, and graded assignments are mapped directly to their targeted analytical focus:
+This module's core video lectures, keynote notes, interactive labs, and the primary loaded dice programming assignment are mapped directly to their operational focus:
 
 | Asset / Deliverable | Operational Focus |
 | :--- | :--- |
-| **Central Tendency & Distribution Moments** | Video series and interactive tool calculating expected values, variances, linear combinations of random variables, and higher-order moments (skewness and kurtosis). |
-| **Statistical Visualization Techniques** | Video series exploring box-plots, violin plots, Kernel Density Estimation (KDE), and Q-Q plots for assessing empirical distribution shapes. |
-| **Joint, Marginal & Conditional Distributions** | Video series covering discrete and continuous joint probability mass/density functions, marginalization, and conditional probability rules. |
-| **Covariance, Correlation & Multivariate Normal** | Video series and two hands-on labs modeling bivariate dependencies, constructing covariance matrices, evaluating Pearson correlation, and executing exploratory data analysis (EDA). |
-| **Loaded Dice Simulation Project** | Optional helper lab and graded programming assignment simulating biased probability distributions and stochastic events using NumPy. |
+| **[Keynote Slides](./03%20Probability%20&%20Statistics%20for%20Machine%20Learning%20&%20Data%20Science/02_Week/Lecture%20Files/Week%202%20%20-%20Distributions%20and%20Probability%20Distribution%20Keynote.pdf)** | Formal visual reference covering expectation, variance, covariance formulas, joint distribution tables, and multivariate Gaussian probability density functions. |
+| **[Summary Statistics & Data Visualization Lab](./03%20Probability%20&%20Statistics%20for%20Machine%20Learning%20&%20Data%20Science/02_Week/Labs/)** | Hands-on Python implementation computing summary statistics (mean, variance, skewness, kurtosis) and plotting histograms and box plots. |
+| **[Simulating Dice Rolls with NumPy Lab (`C3_W2_Lab_2_Dice_Simulations.ipynb`)](./03%20Probability%20&%20Statistics%20for%20Machine%20Learning%20&%20Data%20Science/02_Week/Labs/C3_W2_Lab_2_Dice_Simulations.ipynb)** | Helper tutorial demonstrating how to use NumPy random number generators to simulate discrete probability distributions for dice throws. |
+| **[Rideshare Project Week 2 (`Rideshare_Project_Week2.ipynb`)](./03%20Probability%20&%20Statistics%20for%20Machine%20Learning%20&%20Data%20Science/02_Week/Labs/Rideshare_Project_Week2.ipynb)** | Applied data science project analyzing multi-variable relationships, correlations, and distributions within rideshare data. |
+| **[Loaded Dice Assignment (`C3_W2_Assignment.ipynb`)](./03%20Probability%20&%20Statistics%20for%20Machine%20Learning%20&%20Data%20Science/02_Week/Labs/C3_W2_Assignment.ipynb)** | End-to-end coding assignment building and evaluating statistical models for loaded dice using empirical frequencies and probability distributions. |
 
 ---
 
 ## 💡 Visual Pipeline Reference
 
-The statistical profiling and distribution analysis workflow implemented across this module:
+The foundational statistical and multi-variable formulas governing Week 2:
 
-* **Expectation & Standardization** ➔ Compute expectation $E[X]$ and variance $\text{Var}(X)$ ➔ Standardize data via $Z = \frac{X - \mu}{\sigma}$.
-* **Distribution Diagnostics** ➔ Evaluate skewness/kurtosis ➔ Verify distribution normality via **Q-Q Plots & KDE Curves**.
-* **Multivariate Expansion** ➔ Derive **Joint Distribution** $f(x,y)$ ➔ Marginalize $f_X(x) = \int f(x,y)dy$ ➔ Condition $f_{Y|X}(y|x)$.
-* **Covariance Matrix Construction** ➔ Compute matrix $\mathbf{\Sigma}_{ij} = \text{Cov}(X_i, X_j)$ ➔ Parameterize **Multivariate Gaussian Distributions** $\mathcal{N}(\boldsymbol{\mu}, \mathbf{\Sigma})$.
+- **Expected Value & Variance**:
+
+  $$E[X] = \sum x P(x), \quad \text{Var}(X) = E[(X - E[X])^2] = E[X^2] - (E[X])^2$$
+
+- **Covariance & Correlation Coefficient**:
+
+  $$\text{Cov}(X, Y) = E[(X - E[X])(Y - E[Y])], \quad \rho_{XY} = \frac{\text{Cov}(X, Y)}{\sigma_X \sigma_Y}$$
+
+- **Marginal Distribution from Joint Distribution**:
+
+  $$P(X = x) = \sum_{y} P(X = x, Y = y)$$
 
 ---
 
 ## 🎯 Technical Skills Architecture
 
-### 📊 Probability & Mathematical Statistics
-* **Distribution Moments:** Computing first through fourth statistical moments (mean, variance, skewness, kurtosis) for probability distributions.
-* **Multivariate Probability Calculus:** Formulating joint, marginal, and conditional probability distributions across discrete and continuous spaces.
-* **Covariance Architecture:** Ingesting multi-feature data matrix operations to construct symmetric positive semi-definite covariance matrices.
+### 📊 Probability Theory & Multi-Variable Statistics
+- **Distribution Analysis:** Characterizing data spreads using variance, standard deviation, skewness, and kurtosis.
+- **Multi-Variable Modeling:** Computing joint, marginal, and conditional probabilities to analyze dependencies between features.
+- **Covariance & Correlation:** Evaluating linear relationships and variance structures across multi-dimensional datasets.
 
-### 🤖 Applied Machine Learning Engineering
-* **Exploratory Data Profiling:** Utilizing Seaborn/Matplotlib for distribution visualization (box-plots, violin plots, and Q-Q plots).
-* **Stochastic Simulation:** Writing NumPy vector routines to model non-uniform probability mass functions and empirical dice roll outcomes.
-* **Data Normalization:** Applying feature standardization and scaling routines to prepare multi-feature datasets for algorithmic modeling.
+### 🤖 Applied Python & Data Science Engineering
+- **NumPy Stochastic Simulations:** Generating weighted random samples and simulating discrete probability distributions.
+- **Pandas Data Summarization:** Computing descriptive statistics and grouping multi-variable datasets efficiently.
+- **Statistical Visualization:** Plotting multi-variable distributions, scatter plots, and correlation heatmaps using Matplotlib and Seaborn.
 
 ---
 
 ## 🛠️ Production Tech Stack & Ecosystem
 
-| Core Mathematics | Data Analysis & Viz | Interactive Environments | Algorithm Architecture |
+| Mathematical Framework | Data Analytics Libraries | Simulation Tools | Interactive Environment |
 | :---: | :---: | :---: | :---: |
-| ![Probability](https://img.shields.io/badge/Mathematics-Multivariate_Statistics-blue?style=flat&logo=sympy&logoColor=white) | ![NumPy](https://img.shields.io/badge/NumPy-Stochastic_Simulation-013243?style=flat&logo=numpy&logoColor=white) | ![Jupyter](https://img.shields.io/badge/Jupyter-Interactive_Labs-FA0F00?style=flat&logo=jupyter&logoColor=white) | ![Python](https://img.shields.io/badge/Python-Statistical_Modeling-3670A0?style=flat&logo=python&logoColor=ffdd54) |
+| ![Statistics](https://img.shields.io/badge/Statistics-Covariance_%26_Joint_Distributions-blue?style=flat) | ![Pandas & NumPy](https://img.shields.io/badge/Pandas_%26_NumPy-Summary_Stats-013243?style=flat&logo=numpy&logoColor=white) | ![Seaborn](https://img.shields.io/badge/Seaborn-Visualization-3776AB?style=flat&logo=python&logoColor=white) | ![Jupyter](https://img.shields.io/badge/Jupyter-Interactive_Labs-FA0F00?style=flat&logo=jupyter&logoColor=white) |
