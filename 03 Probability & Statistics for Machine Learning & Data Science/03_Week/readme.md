@@ -1,62 +1,69 @@
-```markdown
-# 📈 Statistical Inference, Maximum Likelihood Estimation & Bayesian MAP
+# 📉 Course 3, Week 3: Sampling, Point Estimation, and Bayesian Statistics
 
-Welcome to this module covering the core statistical foundations of data science: **Sampling Distributions, the Central Limit Theorem, Maximum Likelihood Estimation (MLE), Regularization, and Maximum A Posteriori (MAP) Estimation**.
-
-This module transitions from probability theory to classical and Bayesian statistical inference, taking you from sample statistics and convergence theorems to parameter estimation, likelihood optimization, and updating prior beliefs.
+Welcome to **Week 3** of **Probability & Statistics for Machine Learning & Data Science** (Course 3 of the DeepLearning.AI Mathematics for Machine Learning and Data Science Specialization)! This module transitions your focus from pure probability to inferential statistics. You will explore populations versus samples, the Law of Large Numbers, the Central Limit Theorem (CLT), point estimation, Maximum Likelihood Estimation (MLE), linear regression modeling, regularization, and Bayesian statistics including Maximum A Posteriori (MAP) estimation.
 
 ---
 
 ## 📝 Core Technical Objectives
-* **Sampling Distributions & Convergence:** Differentiating populations from samples, computing sample statistics (mean, variance, proportion), and evaluating convergence via the Law of Large Numbers (LLN) and Central Limit Theorem (CLT).
-* **Maximum Likelihood Estimation (MLE):** Formulating likelihood functions $L(\theta|\mathbf{x})$, deriving log-likelihoods, and optimizing parameters for Bernoulli, Gaussian, and Linear Regression models.
-* **Regularization & Shrinkage:** Applying $L_1$ and $L_2$ penalty constraints to prevent model overfitting in linear estimation frameworks.
-* **Bayesian Inference & MAP:** Comparing Frequentist vs. Bayesian paradigms, applying Maximum A Posteriori (MAP) estimation, updating prior distributions to posteriors, and connecting MAP to regularized MLE.
+- **Sampling Theory & The Central Limit Theorem (CLT):** Understanding how sample statistics approximate population parameters. Demonstrating that the distribution of sample means approaches a normal distribution regardless of the underlying population distribution as sample size $n$ increases:
+
+  $$\bar{X} \sim \mathcal{N}\left(\mu, \frac{\sigma^2}{n}\right)$$
+
+- **Point Estimation & Maximum Likelihood Estimation (MLE):** Finding point estimates that maximize the likelihood function of observed data. Deriving MLE parameters for Bernoulli trials, Gaussian populations, and linear regression coefficients.
+
+- **Regularization & Overfitting Prevention:** Adding penalty terms (L1/Lasso, L2/Ridge) to loss functions to prevent model overfitting by discouraging overly large parameter weights.
+
+- **Bayesian Statistics & Maximum A Posteriori (MAP):** Incorporating prior beliefs into statistical inference. Updating priors with likelihood data to compute posterior distributions, and connecting MAP to regularization techniques.
 
 ---
 
 ## 🧪 Interactive Laboratory & Visual Selection Matrix
 
-This module's core video lectures, interactive tools, hands-on labs, and graded assignments are mapped directly to their targeted analytical focus:
+This module's core video lectures, keynote notes, interactive CLT/MLE labs, and exploratory linear regression assignments are mapped directly to their operational focus:
 
 | Asset / Deliverable | Operational Focus |
 | :--- | :--- |
-| **Population Statistics & Asymptotic Theorems** | Video series and hands-on lab simulating sampling distributions across various population types to demonstrate LLN convergence and CLT normality. |
-| **Maximum Likelihood Estimation (MLE)** | Video series and interactive tool optimizing likelihood functions for Bernoulli trials, Gaussian populations, and Ordinary Least Squares (OLS) regression. |
-| **Regularization & Bayesian Statistics (MAP)** | Video series contrasting Frequentist and Bayesian methods, computing MAP estimators, updating priors, and mapping MAP to $L_2$ regularization. |
-| **Exploratory Data Analysis & Linear Regression** | Hands-on lab applying regression parameter estimation, model fitting, and statistical evaluation on empirical datasets. |
+| **[Lecture Notes & Slides](./03%20Probability%20&%20Statistics%20for%20Machine%20Learning%20&%20Data%20Science/03_Week/Lecture%20Files/Week%203%20-%20Sampling%20and%20Point%20Estimation%20note.pdf)** | Formal visual reference covering Law of Large Numbers proofs, Central Limit Theorem derivations, MLE formulas, regularization mechanics, and Bayesian update equations. |
+| **[Central Limit Theorem Lab (`C3_W3_Lab_1_Central_Limit_Theorem.ipynb`)](./03%20Probability%20&%20Statistics%20for%20Machine%20Learning%20&%20Data%20Science/03_Week/Labs/C3_W3_Lab_1_Central_Limit_Theorem.ipynb)** | Hands-on Python simulation sampling from various non-normal distributions and visualizing the convergence of sample means to a normal distribution. |
+| **[Linear Regression World Happiness Lab (`linear-regression-world-happiness.ipynb`)](./03%20Probability%20&%20Statistics%20for%20Machine%20Learning%20&%20Data%20Science/03_Week/Labs/linear-regression-world-happiness.ipynb)** | Applied exploratory data analysis and linear regression modeling using real-world data to practice point estimation and fitting. |
+| **[Probability & Statistics Assignment (`C3_W3_Assignment.ipynb`)](./03%20Probability%20&%20Statistics%20for%20Machine%20Learning%20&%20Data%20Science/03_Week/Labs/)** | End-to-end coding assignment implementing MLE parameter estimations, likelihood calculations, and Bayesian updating problems. |
 
 ---
 
 ## 💡 Visual Pipeline Reference
 
-The statistical inference and parameter optimization workflow implemented across this module:
+The foundational statistical and inferential equations governing Week 3:
 
-* **Sample Ingestion & Normalization** ➔ Draw $n$ samples ➔ Demonstrate convergence to normal sampling distribution via **Central Limit Theorem (CLT)** $\bar{X}_n \sim \mathcal{N}\left(\mu, \frac{\sigma^2}{n}\right)$.
-* **Likelihood Formulation** ➔ Construct joint distribution $L(\theta) = \prod f(x_i|\theta)$ ➔ Convert to **Log-Likelihood** $\log L(\theta) = \sum \log f(x_i|\theta)$.
-* **Bayesian Prior Integration** ➔ Combine Likelihood $P(\mathcal{D}|\theta)$ with **Prior Distribution** $P(\theta)$ to yield **Posterior** $P(\theta|\mathcal{D}) \propto P(\mathcal{D}|\theta)P(\theta)$.
-* **Parameter Optimization** ➔ Solve for **MLE** $\hat{\theta}_{\text{MLE}} = \arg\max \log L(\theta)$ or **MAP** $\hat{\theta}_{\text{MAP}} = \arg\max [\log L(\theta) + \log P(\theta)]$.
+- **Central Limit Theorem (Sample Mean Normal Approximation)**:
+
+  $$Z = \frac{\bar{X} - \mu}{\sigma / \sqrt{n}} \xrightarrow{d} \mathcal{N}(0, 1)$$
+
+- **Maximum Likelihood Estimation (Log-Likelihood Maximization)**:
+
+  $$\hat{\theta}_{\text{MLE}} = \arg\max_{\theta} \sum_{i=1}^n \ln P(x_i \mid \theta)$$
+
+- **Bayes' Theorem for MAP Estimation**:
+
+  $$\theta_{\text{MAP}} = \arg\max_{\theta} P(\theta \mid X) = \arg\max_{\theta} \left[ P(X \mid \theta) P(\theta) \right]$$
 
 ---
 
 ## 🎯 Technical Skills Architecture
 
-### 📊 Mathematical Statistics & Inference
-* **Asymptotic Theory:** Demonstrating sample mean convergence and normal approximations through empirical simulation.
-* **Point Estimation:** Deriving closed-form estimators via log-likelihood differentiation for standard probability models.
-* **Bayesian Parameter Tuning:** Formulating conjugate priors, calculating posterior distributions, and establishing the exact equivalence between MAP estimation with Gaussian priors and $L_2$ Ridge Regularization.
+### 📊 Inferential Statistics & Estimation Theory
+- **Sampling Diagnostics:** Evaluating population parameters from sample subsets using Law of Large Numbers and Central Limit Theorem principles.
+- **Likelihood Optimization:** Deriving analytical and numerical MLE estimators for discrete and continuous distributions.
+- **Bayesian Updating:** Combining prior distributions with observed likelihoods to compute posterior parameter estimates.
 
-### 🤖 Applied Machine Learning Engineering
-* **Linear Regression Fitting:** Fitting linear models using likelihood maximization and assessing parameter stability.
-* **Overfitting Mitigation:** Applying regularization penalties to constrain parameter magnitudes and improve out-of-sample generalization.
-* **Empirical Data Sampling:** Executing Monte Carlo sampling routines in Python to analyze sample variance and statistical confidence.
+### 🤖 Applied Python & Statistical Modeling
+- **Monte Carlo Simulations:** Programming sample distribution simulations across diverse statistical populations using NumPy.
+- **Linear Regression Fitting:** Building exploratory regression models and analyzing parameter estimates in Python.
+- **Regularization Analysis:** Applying L1/L2 penalty mechanics to constrain model complexity and improve generalization.
 
 ---
 
 ## 🛠️ Production Tech Stack & Ecosystem
 
-| Core Mathematics | Data Analysis | Interactive Environments | Algorithm Architecture |
+| Mathematical Framework | Statistical & ML Libraries | Visualization Tools | Interactive Environment |
 | :---: | :---: | :---: | :---: |
-| ![Statistics](https://img.shields.io/badge/Mathematics-Statistical_Inference-blue?style=flat&logo=sympy&logoColor=white) | ![NumPy](https://img.shields.io/badge/NumPy-Empirical_Sampling-013243?style=flat&logo=numpy&logoColor=white) | ![Jupyter](https://img.shields.io/badge/Jupyter-Interactive_Labs-FA0F00?style=flat&logo=jupyter&logoColor=white) | ![Python](https://img.shields.io/badge/Python-MLE_%26_Bayesian-3670A0?style=flat&logo=python&logoColor=ffdd54) |
-
-```
+| ![Statistics](https://img.shields.io/badge/Inferential_Stats-MLE_%26_Bayesian-blue?style=flat) | ![NumPy & SciPy](https://img.shields.io/badge/NumPy_%26_SciPy-Optimization_&_Sampling-013243?style=flat&logo=numpy&logoColor=white) | ![Matplotlib](https://img.shields.io/badge/Matplotlib-CLT_Distributions-11557c?style=flat) | ![Jupyter](https://img.shields.io/badge/Jupyter-Interactive_Labs-FA0F00?style=flat&logo=jupyter&logoColor=white) |
