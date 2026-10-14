@@ -1,3 +1,14 @@
+<div align="center">
+  
+# 🚀 Mathematics for Machine Learning and Data Science Specialization
+
+[![DeepLearning.AI Specialization](https://img.shields.io/badge/Certification-DeepLearning.AI%20Math-blue?style=for-the-badge&logo=deeplearningdotai)](https://coursera.org/share/cf397cd31f8b7a904442cfd4f5d4f1b1)
+[![Status](https://img.shields.io/badge/Progress-03%20Courses%20Complete-success?style=for-the-badge)](https://coursera.org/share/94656839e32b3cf49290dc51f47605a9)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/subhan-ullah-alfaqeer)
+
+---
+</div>
+
 # 📊 Course 3: Probability & Statistics for Machine Learning & Data Science
 
 Welcome to **Course 3** of the **Mathematics for Machine Learning and Data Science Specialization**, created by DeepLearning.AI and taught by Luis Serrano! This foundational course establishes the core probability and inferential statistics principles that power data-driven machine learning models. You will bridge abstract probabilistic theory with hands-on implementation—moving from exploratory data analysis (EDA) and Bayes' theorem to univariate/multivariate distributions, covariance matrices, the Central Limit Theorem, Maximum Likelihood Estimation (MLE), Bayesian Maximum A Posteriori (MAP) estimation, confidence intervals, and hypothesis testing (including A/B testing).
@@ -69,3 +80,23 @@ $$\begin{aligned}   \text{Bayes' Rule: } &P(A \mid B) = \frac{P(B \mid A)P(A)}{P
 | Mathematical Framework | Data Analytics Libraries | Statistical & Simulation Tools | Interactive Environment |
 | :---: | :---: | :---: | :---: |
 | ![Probability](https://img.shields.io/badge/Probability_%26_Stats-Theory-blue?style=flat) | ![Pandas & NumPy](https://img.shields.io/badge/Pandas_%26_NumPy-Data_Manipulation-013243?style=flat&logo=numpy&logoColor=white) | ![SciPy & Seaborn](https://img.shields.io/badge/SciPy_%26_Seaborn-Hypothesis_Solvers-3776AB?style=flat&logo=python&logoColor=white) | ![Jupyter](https://img.shields.io/badge/Jupyter-Interactive_Labs-FA0F00?style=flat&logo=jupyter&logoColor=white) |
+
+
+
+---
+## 🚀 Professional Credentials
+
+Upon the successful completion of this rigorous engineering track, I have earned the following industry-recognized credentials:
+
+🎓 **Coursera Professional Certificate Verified** 
+
+<div align="center">
+
+
+| **Official Certificate** |
+| :---: |
+| <a href="https://coursera.org/share/94656839e32b3cf49290dc51f47605a9"><img src="../certificates/003 Coursera Probability & Statistics for Machine Learning & Data Science-1.png" width="580" alt="View Certificate"></a> |
+| [🛡️ Verify on Coursera](https://coursera.org/share/94656839e32b3cf49290dc51f47605a9) |
+
+
+</div> 
