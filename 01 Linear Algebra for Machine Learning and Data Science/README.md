@@ -1,3 +1,15 @@
+<div align="center">
+  
+# 🚀 Mathematics for Machine Learning and Data Science Specialization
+
+[![DeepLearning.AI Specialization](https://img.shields.io/badge/Certification-DeepLearning.AI%20Math-blue?style=for-the-badge&logo=deeplearningdotai)](https://coursera.org/share/cf397cd31f8b7a904442cfd4f5d4f1b1)
+[![Status](https://img.shields.io/badge/Progress-01%20Course%20Complete-success?style=for-the-badge)](https://coursera.org/share/dbf57ee8448f95ca31a6368abcc5c56d)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/subhan-ullah-alfaqeer)
+
+---
+</div>
+
+
 # 📐 Course 1: Linear Algebra for Machine Learning and Data Science
 
 Welcome to **Course 1** of the **Mathematics for Machine Learning and Data Science Specialization**, created by DeepLearning.AI and taught by Luis Serrano! This foundational course establishes the core linear algebra concepts that underpin modern machine learning and data science. You will bridge abstract mathematical theory with hands-on implementation—moving from systems of linear equations and matrix transformations to vector spaces, Gaussian elimination, rank, matrix inversion, and spectral eigen-decomposition.
@@ -68,3 +80,23 @@ $$\begin{aligned}   \text{Linear System: } &\begin{cases} a_{11}x_1 + a_{12}x_2 
 | Mathematical Framework | Core Scientific Libraries | Visualization Tool | Interactive Environment |
 | :---: | :---: | :---: | :---: |
 | ![Linear Algebra](https://img.shields.io/badge/Linear_Algebra-Vectors_%26_Matrices-blue?style=flat) | ![NumPy](https://img.shields.io/badge/NumPy_%26_SciPy-Matrix_Operations-013243?style=flat&logo=numpy&logoColor=white) | ![Matplotlib](https://img.shields.io/badge/Matplotlib-Geometric_Plots-11557c?style=flat) | ![Jupyter](https://img.shields.io/badge/Jupyter-Interactive_Labs-FA0F00?style=flat&logo=jupyter&logoColor=white) |
+
+
+
+---
+## 🚀 Professional Credentials
+
+Upon the successful completion of this rigorous engineering track, I have earned the following industry-recognized credentials:
+
+🎓 **Coursera Professional Certificate Verified** 
+
+<div align="center">
+
+
+| **Official Certificate** |
+| :---: |
+| <a href="https://coursera.org/share/dbf57ee8448f95ca31a6368abcc5c56d"><img src="../certificates/001 Linear Algebra for Machine Learning and Data Science-1.png" width="580" alt="View Certificate"></a> |
+| [🛡️ Verify on Coursera](https://coursera.org/share/dbf57ee8448f95ca31a6368abcc5c56d) |
+
+
+</div> 
