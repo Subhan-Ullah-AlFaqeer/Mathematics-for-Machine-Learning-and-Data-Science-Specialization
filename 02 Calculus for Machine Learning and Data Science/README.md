@@ -1,3 +1,16 @@
+<div align="center">
+  
+# 🚀 Mathematics for Machine Learning and Data Science Specialization
+
+
+
+[![DeepLearning.AI Specialization](https://img.shields.io/badge/Certification-DeepLearning.AI%20Math-blue?style=for-the-badge&logo=deeplearningdotai)](https://coursera.org/share/cf397cd31f8b7a904442cfd4f5d4f1b1)
+[![Status](https://img.shields.io/badge/Progress-02%20Course%20Complete-success?style=for-the-badge)](https://coursera.org/share/3c787da9283b77ef3be0960e7d596e4f)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/subhan-ullah-alfaqeer)
+
+---
+</div>
+
 # 📈 Course 2: Calculus for Machine Learning and Data Science
 
 Welcome to **Course 2** of the **Mathematics for Machine Learning and Data Science Specialization**, created by DeepLearning.AI and taught by Luis Serrano! This foundational course establishes the core calculus principles that power modern machine learning models and neural network training loops. You will bridge abstract mathematical theory with hands-on implementation—moving from geometric slopes and analytical differentiation rules to first-order gradient descent, partial derivatives, multi-layer backpropagation, second-order Hessians, and Newton's optimization method.
@@ -71,3 +84,22 @@ $$\begin{aligned}   \text{Derivative Definition: } &f'(x) = \lim_{h \to 0} \frac
 | Mathematical Framework | Core Scientific Libraries | Visualization Tool | Interactive Environment |
 | :---: | :---: | :---: | :---: |
 | ![Calculus](https://img.shields.io/badge/Calculus-Derivatives_%26_Gradients-blue?style=flat) | ![NumPy](https://img.shields.io/badge/NumPy_%26_SymPy-Symbolic_&_Numerical_Math-013243?style=flat&logo=python&logoColor=white) | ![Matplotlib](https://img.shields.io/badge/Matplotlib-Loss_%26_Contour_Plots-11557c?style=flat) | ![Jupyter](https://img.shields.io/badge/Jupyter-Interactive_Labs-FA0F00?style=flat&logo=jupyter&logoColor=white) |
+
+
+---
+## 🚀 Professional Credentials
+
+Upon the successful completion of this rigorous engineering track, I have earned the following industry-recognized credentials:
+
+🎓 **Coursera Professional Certificate Verified** 
+
+<div align="center">
+
+
+| **Official Certificate** |
+| :---: |
+| <a href="https://coursera.org/share/3c787da9283b77ef3be0960e7d596e4f"><img src="../certificates/002 Coursera Calculus for Machine Learning and Data Science-1.png" width="580" alt="View Certificate"></a> |
+| [🛡️ Verify on Coursera](https://coursera.org/share/3c787da9283b77ef3be0960e7d596e4f) |
+
+
+</div>
